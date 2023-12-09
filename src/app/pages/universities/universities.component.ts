@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Universite } from 'src/app/models/universite';
 import { UniversiteServiceService } from 'src/app/services/universite-service.service';
@@ -14,15 +15,19 @@ listUnis : Universite[];
 selectedUniversityName: String="";
 selectedUniversity: Universite;
 
-
+//current page 
+p:Number=1;
 
 constructor(private ac:ActivatedRoute, private uniServ:UniversiteServiceService,private router: Router){
   console.log("custructor");
 }
 
+
+
 ngOnInit(){
    this.uniServ.getAllUniversite().subscribe((res:Universite[])=>this.listUnis=res);
     console.log("initiation ListUserComponent");
+    
   
  }
 

@@ -16,6 +16,7 @@ import { UniversitiesComponent } from 'src/app/pages/universities/universities.c
 import { InfosComponent } from 'src/app/pages/infos/infos.component';
 import { AddUniComponent } from 'src/app/pages/add-uni/add-uni.component';
 import { EdituniComponent } from 'src/app/pages/edituni/edituni.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -25,7 +26,9 @@ import { EdituniComponent } from 'src/app/pages/edituni/edituni.component';
     FormsModule,
     HttpClientModule,
     NgbModule,
-    ClipboardModule
+    ClipboardModule,
+    NgxPaginationModule
+    
   ],
   declarations: [
     DashboardComponent,
