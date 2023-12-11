@@ -17,6 +17,7 @@ import { InfosComponent } from 'src/app/pages/infos/infos.component';
 import { AddUniComponent } from 'src/app/pages/add-uni/add-uni.component';
 import { EdituniComponent } from 'src/app/pages/edituni/edituni.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { ZoomhoverDirective } from 'src/app/directive/zoomhover.directive';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -27,7 +28,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     HttpClientModule,
     NgbModule,
     ClipboardModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+
     
   ],
   declarations: [
@@ -39,7 +41,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
     UniversitiesComponent,
     InfosComponent,
     AddUniComponent,
-    EdituniComponent
+    EdituniComponent,
+    ZoomhoverDirective
   ]
 })
 

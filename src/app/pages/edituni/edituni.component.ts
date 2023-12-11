@@ -38,5 +38,7 @@ if (idParam !== null) {
   editUniversity(){
     console.log("pressed on add")
   this.us.updateUniversite(this.uniSelected).subscribe();
+  alert("u modified a university !")
+  location.assign("./universities")
   }
 }

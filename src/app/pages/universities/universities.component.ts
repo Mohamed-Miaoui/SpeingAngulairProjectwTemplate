@@ -46,7 +46,8 @@ ngOnInit(){
 
 recoverUniversity() {
   this.uniServ.addUniversite(this.selectedUniversity).subscribe((recoveredUni: Universite) => {
-    this.listUnis.push(recoveredUni); //refresh the list
+    this.listUnis.push(recoveredUni); 
+    location.reload()
   });
 }
 

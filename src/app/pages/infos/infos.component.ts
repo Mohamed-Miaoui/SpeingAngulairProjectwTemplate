@@ -21,6 +21,8 @@ export class InfosComponent {
   recover(){
     this.undo.emit("university recovered sucessfully");
     alert("university recovered sucessfully ! ")
+
+    
   }
   
 

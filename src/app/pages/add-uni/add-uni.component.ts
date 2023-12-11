@@ -23,6 +23,8 @@ export class AddUniComponent {
   addUniversity(){
     console.log("pressed on add")
   this.us.addUniversite(this.university).subscribe();
+  alert("u added a university !")
+  location.assign("./universities")
   
   }
   test(err: any){
